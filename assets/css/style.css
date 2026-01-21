@@ -1,0 +1,265 @@
+/* Base */
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #fafbfc;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+header p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Tool Card */
+.compress-card {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.compress-card:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Upload Area */
+/* Upload Area Improved */
+.upload-area {
+  border: 2px dashed #c7d2fe;
+  border-radius: 12px;
+  padding: 32px 16px;
+  background: #f8faff;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-area:hover {
+  border-color: #4f46e5;
+  background: #f1f4ff;
+}
+
+.upload-area input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.upload-icon {
+  font-size: 32px;
+}
+
+/* Select box better */
+.form-select {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+}
+
+/* Compress button premium */
+.compress-btn {
+  padding: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.compress-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(79,70,229,0.35);
+}
+
+/* Mobile spacing fix */
+@media (max-width: 576px) {
+  .upload-area {
+    padding: 24px 12px;
+  }
+}
+
+
+/* Output Section */
+#output {
+  text-align: center;
+}
+#output img {
+  max-width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+}
+
+/* SEO Content */
+.seo-content h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.seo-content p, .seo-content li {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  .compress-card {
+    padding: 20px;
+  }
+}
+/* ================================
+   NAVBAR
+================================ */
+
+.site-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #4f46e5;
+}
+
+/* ================================
+   MOBILE NAVBAR
+================================ */
+
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    display: none;
+    width: 180px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 576px) {
+  .logo img {
+    height: 32px;
+  }
+}
+
