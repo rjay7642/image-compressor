@@ -262,4 +262,40 @@ footer {
     height: 32px;
   }
 }
+.site-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 30px 20px;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+}
+
+.footer-badge img {
+  max-width: 140px;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.footer-badge img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
