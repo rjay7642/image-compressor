@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulk Image Compressor – Compress Multiple Images Online Free</title>
+  <meta name="description" content="Compress multiple images at once online for free. Reduce JPG, PNG & WebP file sizes in bulk without losing quality. Fast, secure & SEO-friendly bulk image compressor.">
+  <meta name="keywords" content="bulk image compressor, compress multiple images, batch image compression, free bulk image optimizer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://yourdomain.in/bulk-compress.html">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Schema: Software Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Bulk Image Compressor",
+    "operatingSystem": "Web",
+    "applicationCategory": "MultimediaApplication",
+    "description": "Free online bulk image compressor to compress multiple JPG, PNG and WebP images at once.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="site-navbar">
+  <div class="nav-container">
+
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="ImageCompressor – Free Online Image Compressor Tool">
+    </a>
+
+    <button class="nav-toggle">☰</button>
+
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="privacy-policy.html">Privacy</a></li>
+  <li><a href="terms.html">Terms</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="text-center mt-4">
+  <h1>Bulk Image Compressor</h1>
+  <p class="text-muted">Compress multiple images at once without losing quality</p>
+</header>
+
+<!-- TOOL AREA -->
+<main class="container main-content mt-4 mb-5 d-flex justify-content-center">
+
+  <section class="compress-card">
+
+    <!-- Tool Switcher -->
+    <div class="tool-switcher">
+      <a href="index.html" class="tool-btn">🗜️ Compress</a>
+      <a href="resize.html" class="tool-btn">📐 Resize</a>
+      <a href="convert.html" class="tool-btn">🔁 Convert</a>
+      <a href="bulk-compress.html" class="tool-btn active">📦 Bulk</a>
+    </div>
+
+    <!-- Upload Area -->
+    <div class="upload-area text-center" id="dropZone">
+      <input type="file" id="imageInput" accept="image/*" multiple hidden>
+      <div class="upload-inner">
+        <div class="upload-icon">📁</div>
+        <p id="fileLabel"><strong>Choose images</strong> or drag & drop here</p>
+        <small>Multiple JPG, PNG, WebP supported</small>
+      </div>
+    </div>
+
+    <!-- Target Size -->
+    <div class="mt-3">
+      <label class="form-label">Target size per image</label>
+      <select id="targetSize" class="form-select">
+        <option value="50">50 KB</option>
+        <option value="100" selected>100 KB</option>
+        <option value="200">200 KB</option>
+        <option value="300">300 KB</option>
+        <option value="500">500 KB</option>
+      </select>
+    </div>
+
+    <button id="bulkCompressBtn" class="btn compress-btn w-100 mt-3">📦 Compress All Images</button>
+
+    <!-- Progress -->
+    <div id="progressBox" class="progress-box" style="display:none;">
+      <div class="progress-text">Compressing images...</div>
+      <div class="progress-bar-bg">
+        <div id="progressBar" class="progress-bar-fill"></div>
+      </div>
+    </div>
+
+    <div id="output" class="mt-4"></div>
+
+  </section>
+
+</main>
+
+<!-- SEO CONTENT -->
+<section class="seo-content mb-5">
+  <h2>Free Bulk Image Compressor Tool</h2>
+
+  <p>
+    Our bulk image compressor allows you to reduce the file size of multiple images at once. You can upload several JPG, PNG, or WebP files and compress them directly in your browser without sending them to any server.
+  </p>
+
+  <p>
+    Bulk image compression is ideal for photographers, website owners, bloggers, and e-commerce stores who need to optimize many images quickly. Smaller images help improve website loading speed, reduce bandwidth usage, and boost SEO rankings.
+  </p>
+
+  <h3>Why Use Our Bulk Compressor?</h3>
+  <ul>
+    <li>Compress multiple images in one click</li>
+    <li>No registration required</li>
+    <li>100% browser based & secure</li>
+    <li>Supports JPG, PNG & WebP</li>
+    <li>SEO optimized output images</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <p>© 2026 ImageCompressor. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- SaaSHub Badge -->
+    <div class="footer-badge">
+      <a href="https://www.saashub.com/free-online-image-compressor-tool?utm_source=badge&utm_campaign=badge&utm_content=free-online-image-compressor-tool&badge_variant=color&badge_kind=approved"
+         target="_blank" rel="noopener">
+        <img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1"
+             alt="Approved on SaaSHub"
+             loading="lazy">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- JSZip must load BEFORE bulk.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/bulk.js"></script>
+
+</body>
+</html>
