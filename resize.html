@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Online Image Resizer – Resize JPG, PNG & WebP Images</title>
+  <meta name="description" content="Resize images online for free. Change image dimensions for JPG, PNG & WebP without losing quality. Fast, secure & SEO-friendly image resizer tool.">
+  <meta name="keywords" content="image resizer, resize image online, resize jpg png webp, free image resizer tool">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://yourdomain.in/resize.html">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Schema: Software Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Image Resizer",
+    "operatingSystem": "Web",
+    "applicationCategory": "MultimediaApplication",
+    "description": "Free online image resizer to resize JPG, PNG and WebP images easily.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVBAR (same as main site) -->
+<nav class="site-navbar">
+  <div class="nav-container">
+
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="ImageCompressor – Free Online Image Compressor Tool">
+    </a>
+
+    <button class="nav-toggle">☰</button>
+
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="privacy-policy.html">Privacy</a></li>
+  <li><a href="terms.html">Terms</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="text-center mt-4">
+  <h1>Online Image Resizer</h1>
+  <p class="text-muted">Resize JPG, PNG & WebP images without losing quality</p>
+</header>
+
+<!-- TOOL AREA -->
+<main class="container main-content mt-4 mb-5 d-flex justify-content-center">
+
+  <section class="compress-card">
+
+    <!-- Tool Switcher -->
+    <div class="tool-switcher">
+      <a href="index.html" class="tool-btn">🗜️ Compress</a>
+      <a href="resize.html" class="tool-btn active">📐 Resize</a>
+      <a href="convert.html" class="tool-btn">🔁 Convert</a>
+      <a href="bulk-compress.html" class="tool-btn">📦 Bulk</a>
+    </div>
+
+    <!-- Upload -->
+    <div class="upload-area text-center" id="dropZone">
+      <input type="file" id="imageInput" accept="image/*" hidden>
+      <div class="upload-inner">
+        <div class="upload-icon">📁</div>
+        <p id="fileLabel"><strong>Choose an image</strong> or drag & drop here</p>
+        <small>JPG, PNG, WebP supported</small>
+      </div>
+    </div>
+
+    <!-- Resize Options -->
+    <div class="row mt-3">
+      <div class="col-6">
+        <label class="form-label">Width (px)</label>
+        <input type="number" id="widthInput" class="form-control" placeholder="e.g. 800">
+      </div>
+      <div class="col-6">
+        <label class="form-label">Height (px)</label>
+        <input type="number" id="heightInput" class="form-control" placeholder="e.g. 600">
+      </div>
+    </div>
+
+    <div class="form-check mt-2">
+      <input class="form-check-input" type="checkbox" id="lockRatio" checked>
+      <label class="form-check-label" for="lockRatio">
+        Lock aspect ratio
+      </label>
+    </div>
+
+    <button id="resizeBtn" class="btn compress-btn w-100 mt-3">📐 Resize Image</button>
+
+    <div id="output" class="mt-4"></div>
+
+  </section>
+
+</main>
+
+<!-- SEO CONTENT -->
+<section class="seo-content mb-5">
+  <h2>Free Online Image Resizer Tool</h2>
+  <p>
+    Our online image resizer helps you change the dimensions of images quickly and easily. You can resize JPG, PNG, and WebP images directly in your browser without uploading files to any server.
+  </p>
+
+  <p>
+    Image resizing is useful for websites, social media posts, e-commerce product images, and documents. Smaller, properly sized images improve website loading speed and SEO performance.
+  </p>
+
+  <h3>Why Use Our Image Resizer?</h3>
+  <ul>
+    <li>100% free to use</li>
+    <li>No registration required</li>
+    <li>Maintains original image quality</li>
+    <li>Works on all devices</li>
+    <li>Secure & browser-based processing</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <p>© 2026 ImageCompressor. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- SaaSHub Badge -->
+    <div class="footer-badge">
+      <a href="https://www.saashub.com/free-online-image-compressor-tool?utm_source=badge&utm_campaign=badge&utm_content=free-online-image-compressor-tool&badge_variant=color&badge_kind=approved"
+         target="_blank" rel="noopener">
+        <img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1"
+             alt="Approved on SaaSHub"
+             loading="lazy">
+      </a>
+    </div>
+
+  </div>
+</footer>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/resize.js"></script>
+
+</body>
+</html>
