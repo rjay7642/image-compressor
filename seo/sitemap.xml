@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://yourdomain.in/</loc>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://yourdomain.in/about.html</loc>
+    <loc>https://yourdomain.in/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/compress-jpg.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/compress-png.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/compress-webp.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/resize.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/convert.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/bulk-compress.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/pdf-to-image.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/image-to-pdf.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/pdf-merge.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/pdf-split.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/pdf-compress.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/image-to-base64.html</loc>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://yourdomain.in/watermark.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/metadata.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/about.html</loc>
+    <priority>0.4</priority>
+  </url>
   <url>
     <loc>https://yourdomain.in/privacy-policy.html</loc>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://yourdomain.in/terms.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/contact.html</loc>
     <priority>0.4</priority>
   </url>
-
+  <url>
+    <loc>https://yourdomain.in/blog.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/blog-compress-jpg.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/blog-compress-png.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/blog-convert-to-webp.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/blog-image-seo-checklist.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/blog-resize-for-social.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
+

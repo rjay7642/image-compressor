@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yourdomain.in/</loc></url>
   <url><loc>https://yourdomain.in/index.html</loc></url>
+  <url><loc>https://yourdomain.in/compress-jpg.html</loc></url>
+  <url><loc>https://yourdomain.in/compress-png.html</loc></url>
+  <url><loc>https://yourdomain.in/compress-webp.html</loc></url>
   <url><loc>https://yourdomain.in/resize.html</loc></url>
   <url><loc>https://yourdomain.in/convert.html</loc></url>
   <url><loc>https://yourdomain.in/bulk-compress.html</loc></url>
@@ -17,4 +20,11 @@
   <url><loc>https://yourdomain.in/privacy-policy.html</loc></url>
   <url><loc>https://yourdomain.in/terms.html</loc></url>
   <url><loc>https://yourdomain.in/contact.html</loc></url>
+  <url><loc>https://yourdomain.in/blog.html</loc></url>
+  <url><loc>https://yourdomain.in/blog-compress-jpg.html</loc></url>
+  <url><loc>https://yourdomain.in/blog-compress-png.html</loc></url>
+  <url><loc>https://yourdomain.in/blog-convert-to-webp.html</loc></url>
+  <url><loc>https://yourdomain.in/blog-image-seo-checklist.html</loc></url>
+  <url><loc>https://yourdomain.in/blog-resize-for-social.html</loc></url>
 </urlset>
+

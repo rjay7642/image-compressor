@@ -760,6 +760,95 @@ small {
   box-shadow: var(--shadow);
 }
 
+/* Product Hunt embed */
+.ph-embed {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 520px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 0 auto 24px;
+}
+
+.ph-embed-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ph-embed-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ph-embed-meta {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.ph-embed-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ph-embed-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ph-embed-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #ff6154;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ph-embed-cta:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(255, 97, 84, 0.25);
+}
+
+@media (max-width: 520px) {
+  .ph-embed {
+    padding: 16px;
+  }
+
+  .ph-embed-header {
+    align-items: flex-start;
+  }
+
+  .ph-embed-title {
+    white-space: normal;
+  }
+}
+
 /* Footer */
 .site-footer {
   background: #0b1220;
@@ -801,8 +890,22 @@ small {
     0 0 24px rgba(34, 197, 94, 0.35);
 }
 
+.footer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-badge a {
+  display: inline-flex;
+  align-items: center;
+}
+
 .footer-badge img {
   max-width: 140px;
+  height: auto;
   opacity: 0.9;
   transition: 0.3s ease;
 }
@@ -810,6 +913,12 @@ small {
 .footer-badge img:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.footer-badge .ph-badge img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive */
@@ -900,3 +1009,4 @@ small {
     text-align: center;
   }
 }
+
