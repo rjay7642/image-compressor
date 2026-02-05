@@ -1009,4 +1009,42 @@ small {
     text-align: center;
   }
 }
+.app-download-cta{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  margin-top:-10px;
+  margin-bottom:28px;
+}
+
+.app-download-btn{
+  background:#38bdf8;
+  color:#0f172a;
+  font-weight:700;
+  padding:14px 22px;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(56,189,248,.25);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.app-download-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 34px rgba(56,189,248,.35);
+}
+
+.app-download-note{
+  font-size:13px;
+  color:#94a3b8;
+}
+
+/* Mobile pe aur zyada visible */
+@media (max-width: 768px){
+  .app-download-btn{
+    width:90%;
+    text-align:center;
+    font-size:16px;
+  }
+}
 
