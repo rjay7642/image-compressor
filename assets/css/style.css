@@ -1014,9 +1014,10 @@ small {
   flex-direction:column;
   align-items:center;
   gap:6px;
-  margin-top:-10px;
+  margin-top:18px;
   margin-bottom:28px;
 }
+
 
 .app-download-btn{
   background:#38bdf8;
