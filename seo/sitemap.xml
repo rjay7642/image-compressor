@@ -25,6 +25,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://yourdomain.in/crop.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/rotate.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yourdomain.in/convert.html</loc>
     <priority>0.8</priority>
   </url>
@@ -50,6 +58,14 @@
   </url>
   <url>
     <loc>https://yourdomain.in/pdf-compress.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/pdf-to-word.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.in/image-to-word.html</loc>
     <priority>0.7</priority>
   </url>
   <url>

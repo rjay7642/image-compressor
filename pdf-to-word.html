@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF to Word Converter - Advanced OCR + Layout Preserve</title>
+  <meta name="description" content="Convert PDF to Word online with text extraction, layout-preserve mode, and OCR for scanned PDFs.">
+  <meta name="keywords" content="pdf to word, pdf to doc, pdf ocr, scanned pdf to word, layout preserve">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://yourdomain.in/pdf-to-word.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.in/pdf-to-word.html">
+  <meta property="og:title" content="PDF to Word Converter - Advanced OCR + Layout Preserve">
+  <meta property="og:description" content="Convert PDF to Word with advanced modes: text, layout preserve, and OCR.">
+  <meta property="og:image" content="https://yourdomain.in/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PDF to Word Converter - Advanced OCR + Layout Preserve">
+  <meta name="twitter:description" content="Convert PDF to Word with OCR and better layout handling.">
+  <meta name="twitter:image" content="https://yourdomain.in/assets/img/og-image.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can this convert scanned PDFs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, use OCR mode for scanned PDFs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which mode should I use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use Text for speed, Layout for better formatting, and OCR for scanned files."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="site-navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="ImageCompressor - Free Online Image Compressor Tool" width="1536" height="1024" loading="eager" decoding="async" fetchpriority="high">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <button class="nav-dropdown-toggle" type="button">Tools</button>
+        <ul class="nav-dropdown">
+          <li><a href="index.html">Compress</a></li>
+          <li><a href="resize.html">Resize</a></li>
+          <li><a href="crop.html">Crop</a></li>
+          <li><a href="rotate.html">Rotate</a></li>
+          <li><a href="convert.html">Convert</a></li>
+          <li><a href="bulk-compress.html">Bulk Compress</a></li>
+          <li><a href="pdf-to-image.html">PDF to Image</a></li>
+          <li><a href="image-to-pdf.html">Image to PDF</a></li>
+          <li><a href="pdf-merge.html">PDF Merge</a></li>
+          <li><a href="pdf-split.html">PDF Split</a></li>
+          <li><a href="pdf-compress.html">PDF Compress</a></li>
+          <li><a href="pdf-to-word.html">PDF to Word</a></li>
+          <li><a href="image-to-word.html">Image to Word</a></li>
+          <li><a href="image-to-base64.html">Image to Base64</a></li>
+          <li><a href="watermark.html">Watermark</a></li>
+          <li><a href="metadata.html">Metadata</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="privacy-policy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero text-center reveal">
+  <h1>PDF to Word Converter</h1>
+  <p class="text-muted">Advanced conversion: text, layout preserve, and OCR</p>
+</header>
+
+<main class="container main-content mt-4 mb-5 d-flex justify-content-center reveal delay-2">
+  <section class="compress-card">
+    <div class="tool-switcher">
+      <a href="index.html" class="tool-btn">Compress</a>
+      <a href="resize.html" class="tool-btn">Resize</a>
+      <a href="crop.html" class="tool-btn">Crop</a>
+      <a href="rotate.html" class="tool-btn">Rotate</a>
+      <a href="convert.html" class="tool-btn">Convert</a>
+      <a href="bulk-compress.html" class="tool-btn">Bulk</a>
+      <a href="pdf-to-image.html" class="tool-btn">PDF to Image</a>
+      <a href="image-to-pdf.html" class="tool-btn">Image to PDF</a>
+      <a href="pdf-merge.html" class="tool-btn">PDF Merge</a>
+      <a href="pdf-split.html" class="tool-btn">PDF Split</a>
+      <a href="pdf-compress.html" class="tool-btn">PDF Compress</a>
+      <a href="pdf-to-word.html" class="tool-btn active">PDF to Word</a>
+      <a href="image-to-base64.html" class="tool-btn">Image to Base64</a>
+      <a href="watermark.html" class="tool-btn">Watermark</a>
+      <a href="metadata.html" class="tool-btn">Metadata</a>
+    </div>
+
+    <div class="upload-area text-center" id="dropZone">
+      <input type="file" id="pdfInput" accept="application/pdf" hidden>
+      <div class="upload-inner">
+        <div class="upload-icon">PDF</div>
+        <p id="fileLabel"><strong>Choose a PDF</strong> or drag & drop here</p>
+        <small>Works for text PDFs and scanned PDFs (OCR mode)</small>
+      </div>
+    </div>
+
+    <div class="input-helper mt-3">
+      <label class="form-label" for="modeSelect">Conversion mode</label>
+      <select id="modeSelect" class="form-select">
+        <option value="layout" selected>1) Auto Arrange (PDF-like layout)</option>
+        <option value="text">2) Text Mode (Fast)</option>
+        <option value="ocr">3) OCR Mode (Scanned PDFs)</option>
+      </select>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-6">
+        <label class="form-label" for="ocrLang">OCR Language</label>
+        <select id="ocrLang" class="form-select">
+          <option value="eng" selected>English</option>
+          <option value="eng+hin">English + Hindi</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <label class="form-label" for="maxPages">Max pages (0 = all)</label>
+        <input id="maxPages" type="number" class="form-control" min="0" value="0">
+      </div>
+    </div>
+
+    <label class="form-check mt-3">
+      <input class="form-check-input" type="checkbox" id="includePageBreak" checked>
+      <span>Insert page break after each page</span>
+    </label>
+
+    <label class="form-check mt-2">
+      <input class="form-check-input" type="checkbox" id="includeBgLayer" checked>
+      <span>High fidelity background (visual match)</span>
+    </label>
+
+    <label class="form-check mt-2">
+      <input class="form-check-input" type="checkbox" id="showOverlayText">
+      <span>Show editable overlay text on top</span>
+    </label>
+
+    <button id="convertBtn" class="btn compress-btn w-100 mt-3">Convert to Word</button>
+
+    <div id="progressBox" class="progress-box" style="display:none;">
+      <div class="progress-text">Converting PDF...</div>
+      <div class="progress-bar-bg">
+        <div id="progressBar" class="progress-bar-fill"></div>
+      </div>
+    </div>
+
+    <div id="output" class="mt-4"></div>
+  </section>
+</main>
+
+<section class="container seo-content mb-5">
+  <h2>Advanced PDF to Word Logic</h2>
+  <p>
+    This tool now supports three conversion modes: fast text extraction, layout-preserve mode for better formatting,
+    and OCR mode for scanned PDFs. Everything runs in browser for privacy.
+  </p>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2026 ImageCompressor. All rights reserved.</p>
+    <span class="footer-credit">Jaya Technology</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-badge">
+      <a href="https://www.saashub.com/free-online-image-compressor-tool?utm_source=badge&utm_campaign=badge&utm_content=free-online-image-compressor-tool&badge_variant=color&badge_kind=approved" target="_blank" rel="noopener">
+        <img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1" decoding="async" alt="Approved on SaaSHub" loading="lazy">
+      </a>
+      <a class="ph-badge" href="https://www.producthunt.com/products/free-online-image-compressor-3?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-free-online-image-compressor-3" target="_blank" rel="noopener noreferrer">
+        <img alt="Free Online Image Compressor - Smaller images. Faster sites. Better SEO. | Product Hunt" width="250" height="54" loading="lazy" decoding="async" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1072827&theme=dark&t=1770215239395">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="assets/js/pdf-to-word.js"></script>
+</body>
+</html>

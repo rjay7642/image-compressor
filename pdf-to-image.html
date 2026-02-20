@@ -212,11 +212,11 @@
 
     <!-- Upload Area -->
     <div class="upload-area text-center" id="dropZone">
-      <input type="file" id="pdfInput" accept="application/pdf" hidden>
+      <input type="file" id="pdfInput" accept="application/pdf" multiple hidden>
       <div class="upload-inner">
         <div class="upload-icon">PDF</div>
-        <p id="fileLabel"><strong>Choose a PDF</strong> or drag & drop here</p>
-        <small>All pages will be extracted as PNG</small>
+        <p id="fileLabel"><strong>Choose PDF files</strong> or drag & drop here</p>
+        <small>Select one or many PDFs. Pages will be extracted as PNG.</small>
       </div>
     </div>
 
@@ -322,6 +322,7 @@
 </footer>
 <script src="assets/js/ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="assets/js/pdf-to-image.js"></script>
 
 </body>

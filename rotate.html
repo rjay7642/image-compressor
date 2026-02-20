@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Rotate Tool - Rotate and Flip Images</title>
+  <meta name="description" content="Rotate and flip images online for free. Fast in-browser image rotation and orientation correction without upload.">
+  <meta name="keywords" content="rotate image online, flip image, image orientation tool, rotate jpg, rotate png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.in/rotate.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.in/rotate.html">
+  <meta property="og:title" content="Image Rotate Tool - Rotate and Flip Images">
+  <meta property="og:description" content="Rotate or flip JPG, PNG, WebP images instantly in your browser.">
+  <meta property="og:image" content="https://yourdomain.in/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Rotate Tool - Rotate and Flip Images">
+  <meta name="twitter:description" content="Fast browser-based image rotate and flip tool.">
+  <meta name="twitter:image" content="https://yourdomain.in/assets/img/og-image.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="site-navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="ImageCompressor logo" width="1536" height="1024">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <button class="nav-dropdown-toggle" type="button">Tools</button>
+        <ul class="nav-dropdown">
+          <li><a href="index.html">Compress</a></li>
+          <li><a href="resize.html">Resize</a></li>
+          <li><a href="crop.html">Crop</a></li>
+          <li><a href="rotate.html">Rotate</a></li>
+          <li><a href="convert.html">Convert</a></li>
+          <li><a href="bulk-compress.html">Bulk Compress</a></li>
+          <li><a href="pdf-to-image.html">PDF to Image</a></li>
+          <li><a href="image-to-pdf.html">Image to PDF</a></li>
+          <li><a href="pdf-merge.html">PDF Merge</a></li>
+          <li><a href="pdf-split.html">PDF Split</a></li>
+          <li><a href="pdf-compress.html">PDF Compress</a></li>
+          <li><a href="pdf-to-word.html">PDF to Word</a></li>
+          <li><a href="image-to-word.html">Image to Word</a></li>
+          <li><a href="image-to-base64.html">Image to Base64</a></li>
+          <li><a href="watermark.html">Watermark</a></li>
+          <li><a href="metadata.html">Metadata</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="privacy-policy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero text-center reveal">
+  <h1>Image Rotate Tool</h1>
+  <p class="text-muted">Rotate and flip your image in seconds</p>
+</header>
+
+<main class="container main-content mt-4 mb-5 d-flex justify-content-center reveal delay-2">
+  <section class="compress-card">
+    <div class="tool-switcher">
+      <a href="index.html" class="tool-btn">Compress</a>
+      <a href="resize.html" class="tool-btn">Resize</a>
+      <a href="crop.html" class="tool-btn">Crop</a>
+      <a href="rotate.html" class="tool-btn active">Rotate</a>
+      <a href="convert.html" class="tool-btn">Convert</a>
+      <a href="bulk-compress.html" class="tool-btn">Bulk</a>
+      <a href="pdf-to-image.html" class="tool-btn">PDF to Image</a>
+      <a href="image-to-pdf.html" class="tool-btn">Image to PDF</a>
+      <a href="pdf-merge.html" class="tool-btn">PDF Merge</a>
+      <a href="pdf-split.html" class="tool-btn">PDF Split</a>
+      <a href="pdf-compress.html" class="tool-btn">PDF Compress</a>
+      <a href="image-to-base64.html" class="tool-btn">Image to Base64</a>
+      <a href="watermark.html" class="tool-btn">Watermark</a>
+      <a href="metadata.html" class="tool-btn">Metadata</a>
+    </div>
+
+    <div class="upload-area text-center" id="dropZone">
+      <input type="file" id="imageInput" accept="image/*" hidden>
+      <div class="upload-inner">
+        <div class="upload-icon">Rotate</div>
+        <p id="fileLabel"><strong>Choose an image</strong> or drag & drop here</p>
+        <small>JPG, PNG, WebP supported</small>
+      </div>
+    </div>
+
+    <div class="input-helper mt-3">
+      <label class="form-label" for="angleSelect">Rotation</label>
+      <select id="angleSelect" class="form-select">
+        <option value="90">90&deg; Clockwise</option>
+        <option value="180">180&deg;</option>
+        <option value="270">270&deg; Clockwise</option>
+        <option value="0">0&deg;</option>
+      </select>
+    </div>
+
+    <div class="row mt-3">
+      <label class="form-check col-6">
+        <input class="form-check-input" type="checkbox" id="flipH">
+        <span>Flip Horizontal</span>
+      </label>
+      <label class="form-check col-6">
+        <input class="form-check-input" type="checkbox" id="flipV">
+        <span>Flip Vertical</span>
+      </label>
+    </div>
+
+    <button id="rotateBtn" class="btn compress-btn w-100 mt-3">Apply</button>
+    <div id="output" class="mt-4"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2026 ImageCompressor. All rights reserved.</p>
+    <span class="footer-credit">Jaya Technology</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-badge">
+      <a href="https://www.saashub.com/free-online-image-compressor-tool?utm_source=badge&utm_campaign=badge&utm_content=free-online-image-compressor-tool&badge_variant=color&badge_kind=approved" target="_blank" rel="noopener">
+        <img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1" decoding="async" alt="Approved on SaaSHub" loading="lazy">
+      </a>
+      <a class="ph-badge" href="https://www.producthunt.com/products/free-online-image-compressor-3?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-free-online-image-compressor-3" target="_blank" rel="noopener noreferrer">
+        <img alt="Free Online Image Compressor - Smaller images. Faster sites. Better SEO. | Product Hunt" width="250" height="54" loading="lazy" decoding="async" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1072827&theme=dark&t=1770215239395">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/rotate.js"></script>
+</body>
+</html>
+

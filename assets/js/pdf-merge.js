@@ -27,13 +27,14 @@ dropZone.addEventListener("drop", e => {
 });
 
 function handleFiles(fileList) {
-  files = Array.from(fileList || []);
+  files = window.getToolFiles ? window.getToolFiles(pdfInput) : Array.from(fileList || []);
   if (!files.length) return;
   fileLabel.innerHTML = `Selected: <strong>${files.length}</strong> PDFs`;
   dropZone.classList.add("selected");
 }
 
 mergeBtn.addEventListener("click", async () => {
+  files = window.getToolFiles ? window.getToolFiles(pdfInput) : files;
   if (!files.length) {
     alert("Please select PDFs first");
     return;

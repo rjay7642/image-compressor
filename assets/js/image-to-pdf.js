@@ -30,13 +30,14 @@ dropZone.addEventListener("drop", e => {
 });
 
 function handleFiles(fileList) {
-  files = Array.from(fileList || []);
+  files = window.getToolFiles ? window.getToolFiles(imageInput) : Array.from(fileList || []);
   if (!files.length) return;
   fileLabel.innerHTML = `Selected: <strong>${files.length}</strong> images`;
   dropZone.classList.add("selected");
 }
 
 convertBtn.addEventListener("click", async () => {
+  files = window.getToolFiles ? window.getToolFiles(imageInput) : files;
   if (!files.length) {
     alert("Please select images first");
     return;

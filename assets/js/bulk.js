@@ -17,7 +17,7 @@ let zipQueue = []; // { name, blob }
 imageInput.addEventListener("change", handleFiles);
 
 function handleFiles() {
-  files = Array.from(imageInput.files || []);
+  files = window.getToolFiles ? window.getToolFiles(imageInput) : Array.from(imageInput.files || []);
   if (!files.length) return;
 
   fileLabel.innerHTML = `Selected: <strong>${files.length}</strong> images`;
@@ -46,6 +46,7 @@ dropZone.addEventListener("drop", e => {
 
 // ---------- Bulk Compress ----------
 bulkCompressBtn.addEventListener("click", () => {
+  files = window.getToolFiles ? window.getToolFiles(imageInput) : files;
   if (!files.length) {
     alert("Please select images first");
     return;
