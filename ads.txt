@@ -1,0 +1,3 @@
+# ads.txt - ImageCompressor
+# Add your Google AdSense or advertising partner IDs here:
+# Example: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
