@@ -1,124 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.in/</loc>
+    <loc>https://rjay7642.github.io/image-compressor/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.in/compress-jpg.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/compress-jpg.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/compress-png.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/compress-png.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/compress-webp.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/compress-webp.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/resize.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/resize.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/crop.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/crop.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/rotate.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/rotate.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/convert.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/convert.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/bulk-compress.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/bulk-compress.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/pdf-to-image.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/pdf-to-image.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/image-to-pdf.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/image-to-pdf.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/pdf-merge.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/pdf-merge.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/pdf-split.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/pdf-split.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/pdf-compress.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/pdf-compress.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/pdf-to-word.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/pdf-to-word.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/image-to-word.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/image-to-word.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/image-to-base64.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/image-to-base64.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/watermark.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/watermark.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/metadata.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/metadata.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/about.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/about.html</loc>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/privacy-policy.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/privacy-policy.html</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/terms.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/terms.html</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/contact.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/contact.html</loc>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog-compress-jpg.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog-compress-jpg.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog-compress-png.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog-compress-png.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog-convert-to-webp.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog-convert-to-webp.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog-image-seo-checklist.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog-image-seo-checklist.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yourdomain.in/blog-resize-for-social.html</loc>
+    <loc>https://rjay7642.github.io/image-compressor/blog-resize-for-social.html</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
-

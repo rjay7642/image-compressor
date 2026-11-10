@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.in/sitemap.xml
+
+Sitemap: https://rjay7642.github.io/image-compressor/sitemap.xml

@@ -1,137 +1,98 @@
-# ImageCompressor - All-in-One Browser-Based File Tools
+# ImageCompressor
 
-ImageCompressor is a frontend-first toolkit for image and PDF workflows.  
-It provides fast, privacy-friendly processing directly in the browser for common tasks such as compression, conversion, PDF utilities, OCR-based extraction, and batch operations.
+<p align="center">
+  <strong>Smaller files. Faster workflows. Your files stay yours.</strong><br>
+  A polished, open-source collection of image and PDF tools that run right in your browser.
+</p>
 
-## Key Highlights
+<p align="center">
+  <a href="https://rjay7642.github.io/image-compressor/">Live website</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/rjay7642/image-compressor">Source code</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/rjay7642/image-compressor/issues">Report an issue</a>
+</p>
 
-- Browser-side processing for most tools (no mandatory server upload).
-- Modern multi-tool interface with shared UI components.
-- Drag-and-drop uploads with file preview support.
-- Reordering support for multi-file workflows.
-- Batch export options including ZIP downloads.
-- SEO-ready static pages with metadata and sitemap entries.
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-MIT-c9a96d?style=flat-square" alt="Open source under the MIT License">
+  <img src="https://img.shields.io/badge/No%20build%20step-Static%20web-green?style=flat-square" alt="Static website with no build step">
+  <img src="https://img.shields.io/badge/Processing-In%20your%20browser-28664f?style=flat-square" alt="Browser-side processing">
+</p>
 
-## Available Tools
+---
 
-### Image Tools
-- Image Compress
-- Bulk Image Compress (ZIP export)
-- Image Resize
-- Image Crop
-- Image Rotate / Flip
-- Image Convert (JPG/PNG/WebP)
-- Watermark
-- Metadata Reader
-- Image to Base64
-- Image to PDF
-- Image to Word (OCR)
+## A thoughtfully simple toolkit
 
-### PDF Tools
-- PDF to Image (multi-PDF + ZIP export)
-- PDF Merge
-- PDF Split
-- PDF Compress (API-dependent route)
-- PDF to Word (Auto Arrange, Text, OCR modes)
+ImageCompressor brings everyday image and PDF utilities together in one fast, privacy-minded website. Select a tool, drop in a file, and work with it locally in your browser—no account required.
 
-## PDF to Word Modes
+### Image tools
 
-The PDF-to-Word converter supports multiple strategies:
+- Compress JPG, PNG, and WebP images toward a target file size
+- Resize, crop, rotate, and flip images
+- Convert between common image formats
+- Compress multiple images and download a ZIP
+- Add watermarks, inspect image metadata, or create a Base64 data URL
+- Turn images into PDFs or extract text from images with OCR
 
-- `Auto Arrange (PDF-like layout)`  
-  Attempts to preserve text placement and page layout.
-- `Text Mode`  
-  Faster plain text extraction with smart spacing/line grouping.
-- `OCR Mode`  
-  For scanned PDFs where text is embedded in images.
+### PDF tools
 
-Optional high-fidelity controls are included for better visual match.
+- Convert PDF pages to images
+- Merge, split, and compress PDFs
+- Extract PDF content to Word with layout, text, and OCR modes
 
-## Project Structure
+Some features use third-party browser libraries delivered by CDN. PDF compression and other integrations may depend on the implementation noted on their tool page.
+
+## Privacy by design
+
+Image and PDF processing is designed to happen on your device. Files are not sent to an ImageCompressor upload service for the browser-side tools. Features that rely on a remote service or third-party library are identified in the relevant tool flow; review those providers' terms before use.
+
+## Try it locally
+
+This is a static HTML, CSS, and JavaScript project with no build step.
+
+```bash
+git clone https://github.com/rjay7642/image-compressor.git
+cd image-compressor
+python -m http.server 8000
+```
+
+Open [http://localhost:8000](http://localhost:8000). A local server is recommended over opening HTML files directly because browsers restrict some file and module APIs on `file://` pages.
+
+## Open source & contributions
+
+ImageCompressor is open source under the [MIT License](./LICENSE). Contributions are welcome:
+
+1. Fork the repository and create a focused feature branch.
+2. Keep changes accessible, responsive, and privacy-conscious.
+3. Test the affected tool pages in a browser.
+4. Open a pull request with a concise summary and test notes.
+
+When adding a tool, update the shared navigation, relevant tool links, page metadata, and sitemap.
+
+## Project map
 
 ```text
 .
-|-- index.html
-|-- *.html                     # Tool pages
-|-- assets/
-|   |-- css/
-|   |   `-- style.css
-|   `-- js/
-|       |-- ui.js              # Shared UI behavior (nav, previews, tool sync helpers)
-|       |-- compressor.js
-|       |-- pdf-to-word.js
-|       |-- pdf-to-image.js
-|       `-- ...other tool scripts
-|-- sitemap.xml
-`-- seo/
-    |-- sitemap.xml
-    `-- robots.txt
+├── index.html              # Main image compressor
+├── *.html                  # Tool, guide, and information pages
+├── assets/
+│   ├── css/style.css       # Shared interface and responsive styles
+│   └── js/                 # Tool logic and shared UI behavior
+├── sitemap.xml             # Search-engine sitemap
+├── robots.txt
+└── seo/                    # SEO resource copies
 ```
 
-## How to Run Locally
+## Deploy
 
-This is a static web project.
+The site is published with GitHub Pages at [rjay7642.github.io/image-compressor](https://rjay7642.github.io/image-compressor/). It can also be hosted on any static host. Publish the repository root so the HTML files, `assets/`, `robots.txt`, and `sitemap.xml` remain at their expected paths.
 
-1. Clone the repository.
-2. Open `index.html` directly in a browser.
-3. For best compatibility (and to avoid local file restrictions), run through a local static server:
-   - VS Code Live Server, or
-   - `python -m http.server`, or
-   - any static hosting server.
+## Built with
 
-## External Libraries Used
+- HTML, CSS, and vanilla JavaScript
+- PDF.js, jsPDF, PDF-Lib, JSZip, Tesseract.js, and EXIF.js for selected workflows
+- Google Fonts for Plus Jakarta Sans and Space Grotesk
 
-Some features rely on CDN libraries:
+---
 
-- `pdf.js` for PDF parsing/rendering.
-- `jsPDF` for PDF generation.
-- `PDF-Lib` for PDF merge/split workflows.
-- `JSZip` for ZIP generation.
-- `Tesseract.js` for OCR.
-- `EXIF.js` for metadata extraction.
-
-## Privacy Note
-
-Most tools run fully client-side.  
-However, any server-backed endpoint (for example PDF compress API route if configured) should be documented and secured in deployment.
-
-## Browser Compatibility
-
-Recommended:
-- Latest Chrome / Edge
-- Latest Firefox
-- Safari (recent versions)
-
-Older browsers may have limited support for modern file APIs, canvas, or OCR performance.
-
-## Deployment
-
-You can deploy this as a static site on platforms such as:
-- GitHub Pages
-- Netlify
-- Vercel (static)
-- Any Nginx/Apache static host
-
-Ensure CDN scripts are reachable in production environments.
-
-## Roadmap Ideas
-
-- DOCX-native export for improved Word compatibility.
-- Better table/column reconstruction for PDF-to-Word.
-- Per-tool history panel and export presets.
-- Worker-based processing for heavy tasks and smoother UX on large files.
-
-## Contributing
-
-Contributions are welcome.
-
-1. Fork the repo
-2. Create a feature branch
-3. Commit changes with clear messages
-4. Open a pull request
-
-If you add a new tool page, also update:
-- tool navigation links
-- feature cards (or shared tool catalog)
-- sitemap files
-- relevant metadata
+Made with care by **Jay Singh**.
